@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Activator
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,7 @@ TagManager:
     locked: 0
   - name: Arrows
     uniqueID: 975071043
+    locked: 0
+  - name: Backround
+    uniqueID: 1440816733
     locked: 0
