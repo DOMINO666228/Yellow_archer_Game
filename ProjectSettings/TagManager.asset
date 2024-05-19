@@ -43,9 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Backround
+    uniqueID: 1440816733
+    locked: 0
   - name: Arrows
     uniqueID: 975071043
     locked: 0
-  - name: Backround
-    uniqueID: 1440816733
+  - name: Player
+    uniqueID: 3255534003
     locked: 0

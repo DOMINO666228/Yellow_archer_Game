@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject resultsScreen;
     public Text percentText, normalsText, goodsText, perfectsText, finalScoreText, missesText;
+    public Pause pause;
+
     private void Update()
     {
         if(!startPlaying)
@@ -45,7 +47,8 @@ public class GameManager : MonoBehaviour
 
                 theMusic.Play();
             }
-        }else
+        }
+        else if (!pause.GamePaused)
         {
             if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy)
             {
@@ -74,6 +77,7 @@ public class GameManager : MonoBehaviour
         currentMultiplier = 1;
 
         totalNotes = FindObjectsOfType<NoteObject>().Length;
+        pause = FindObjectOfType<Pause>();
     }
 
     public void NoteHit()
