@@ -20,10 +20,11 @@ public class NoteObject : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Activator")
+        if (other.tag == "Activator" & gameObject.activeSelf)
         {
             canBePressed = false;
-
+            //Debug.Log(gameObject.activeSelf);
+            //Debug.Log(gameObject.activeSelf);
             GameManager.instance.NoteMissed();
             Instantiate(missEffect, transform.position, missEffect.transform.rotation);
 
@@ -40,12 +41,14 @@ public class NoteObject : MonoBehaviour
 
                 //GameManager.instance.NoteHit();
 
-                if (Mathf.Abs(transform.position.y) > 0.25)
+                Debug.Log(Mathf.Abs(transform.position.y));
+                if (Mathf.Abs(transform.position.y) > 2.1f)
                 {
                     GameManager.instance.NormalHit();
                     Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
+
                 }
-                else if (Mathf.Abs(transform.position.y) > 0.05f)
+                else if (Mathf.Abs(transform.position.y) > 1.6f)
                 {
                     GameManager.instance.GoodHit();
                     Instantiate(goodEffect, transform.position, goodEffect.transform.rotation);
