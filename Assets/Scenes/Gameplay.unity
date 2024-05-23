@@ -1259,6 +1259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 336418843}
   - component: {fileID: 336418842}
+  - component: {fileID: 336418844}
   m_Layer: 0
   m_Name: strachnychiy
   m_TagString: Untagged
@@ -1327,12 +1328,33 @@ Transform:
   m_GameObject: {fileID: 336418841}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.14, y: -0.18, z: 0}
-  m_LocalScale: {x: 14.488, y: 14.488, z: 14.488}
+  m_LocalPosition: {x: 6.14, y: 0.18, z: 0}
+  m_LocalScale: {x: -14.488, y: 14.488, z: 14.488}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &336418844
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336418841}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 4384867511260329342, guid: d3751424e5cdc7c488bb204e73712d5b, type: 3}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &450328914
 GameObject:
   m_ObjectHideFlags: 0
