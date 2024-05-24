@@ -19,16 +19,17 @@ public class ArrowSpawner : MonoBehaviour
     [Range(0f, 1f)]
     public float speed = 1f;
 
-    void SetGameSpeed()
-    {
-        Time.timeScale = speed;
-        audio.pitch = speed;
-    }
+    //void SetGameSpeed()
+   // {
+     //   Time.timeScale = speed;
+      //  audio.pitch = speed;
+    //}
 
-    void Start()
-    {
-        SetGameSpeed();
-    }
+    //void Start()
+   // {
+    //    SetGameSpeed();
+   // }
+    //
 
     void Update()
     {
